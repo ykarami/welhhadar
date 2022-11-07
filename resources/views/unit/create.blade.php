@@ -21,23 +21,23 @@
             <div class="unit-details">
               <div class="input-box">
                 <span class="details">Unit name</span>
-                <input type="text" name="unitName" >
-              </div>
+                <input type="text" name="unitName" value="{{old('unitName')}}">
+              </div>"
               <div class="input-box">
                 <span class="details">Company</span>
-                <input type="text" name="company">
+                <input type="text" name="company" value="{{old('company')}}">
               </div>
               <div class="input-box">
                 <span class="details">Country</span>
-                <input type="text" name="country" >
+                <input type="text" name="country" value="{{old('country')}}">
               </div>
               <div class="input-box">
                 <span class="details">Well</span>
-                <input type="text" name="well" >
+                <input type="text" name="well" value="{{old('well')}}">
               </div>
               <div class="input-box">
                 <span class="details">Hasp ID</span>
-                <input type="text" name="haspId" >
+                <input type="text" name="haspId" value="{{old('haspId')}}">
               </div>
               <div class="input-box">
                 <span class="details">Destination</span>

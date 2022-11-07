@@ -420,12 +420,15 @@ main .insights .progress .number{
     margin: auto;
     border-radius: 10px;
     font-size: 1rem;
-    color: #a25a21;
+    color: #af8e8a;
     border-style: solid;
     border-width: 1px;
 
 }
-    
+
+.unit-main .error ul li{
+    list-style-type: square;
+}
 
 
 
