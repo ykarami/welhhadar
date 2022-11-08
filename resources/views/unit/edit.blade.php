@@ -4,6 +4,15 @@
 
 <main class="unit-main">
     <div class="unit-container">
+        @if (count($errors))
+        <div class="error">
+          <ul>
+            @foreach ($errors->all() as $message)
+            <li>{{$message}}</li>
+            @endforeach
+          </ul>
+        </div>
+        @endif 
         <div class="title">New Unit</div>
         <div class="content">
           <form action="{{url('unit/'.$unit->id)}}" method="post">
@@ -12,23 +21,23 @@
             <div class="unit-details">
               <div class="input-box">
                 <span class="details">Unit name</span>
-                <input type="text" name="unitName"  value="{{$unit->nomUnit}}" required>
+                <input type="text" name="unitName"  value="{{$unit->nomUnit}}">
               </div>
               <div class="input-box">
                 <span class="details">Company</span>
-                <input type="text" name="company" value="{{$unit->company}}" required>
+                <input type="text" name="company" value="{{$unit->company}}">
               </div>
               <div class="input-box">
                 <span class="details">Country</span>
-                <input type="text" name="country" value="{{$unit->country}}" required>
+                <input type="text" name="country" value="{{$unit->country}}">
               </div>
               <div class="input-box">
                 <span class="details">Well</span>
-                <input type="text" name="well" value="{{$unit->activeWell}}" required>
+                <input type="text" name="well" value="{{$unit->activeWell}}">
               </div>
               <div class="input-box">
                 <span class="details">Hasp ID</span>
-                <input type="text" name="haspId"value="{{$unit->haspId}}" required>
+                <input type="text" name="haspId"value="{{$unit->haspId}}">
               </div>
               <div class="input-box">
                 <span class="details">Destination</span>

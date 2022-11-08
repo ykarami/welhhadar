@@ -30,6 +30,8 @@ class UnitController extends Controller
         $unit->type = $request->input('jobProfile');
         $unit->save();
 
+        session()->flash('success', 'Unit successefuly created !');
+
         return redirect('unit');
         
 

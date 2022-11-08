@@ -4,6 +4,11 @@
 
 <main class="unit-main">
     <div class="unit-container">
+        @if(session()->has('success'))
+        <div class="success">
+            {{session()->get('success')}}
+        </div>
+        @endif
         <div class="title">Liste Unit</div>
         <div class="addUnit"><a href="{{url('unit/create')}}"><span class="material-symbols-sharp">add</span> Add unit </a></div>
             <div class="content">

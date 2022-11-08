@@ -411,26 +411,6 @@ main .insights .progress .number{
 
 }
 
-.unit-main .error{
-    background: #f9d7db;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    font-size: 1rem;
-    color: #af8e8a;
-    border-style: solid;
-    border-width: 1px;
-
-}
-
-.unit-main .error ul li{
-    list-style-type: square;
-}
-
-
 
 .unit-main .unit-container{
     margin-top: 20px;
@@ -439,6 +419,18 @@ main .insights .progress .number{
     
   }
  
+.unit-main .unit-container .success{
+
+    background-color: #41f1b6;
+    width: 50%;
+    color: #363949;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    
+}
   .unit-main .unit-container .title{
     display: flex;
     font-size: 25px;
@@ -461,6 +453,15 @@ main .insights .progress .number{
     justify-content: space-between;
     margin: 20px 0 12px 0;
   }
+
+  .content form .unit-details .has-error input{
+    border-color: red;
+
+  }
+  .content form .unit-details .has-error select{
+    border-color: red;
+
+  }
   form .unit-details .input-box{
     margin: 15px 30px;
     width: calc(100% / 2 - 80px);
@@ -476,12 +477,18 @@ main .insights .progress .number{
     width: 100%;
     outline: none;
     font-size: 16px;
-    border-radius: 5px;
     padding-left: 15px;
     border: 1px solid var(--color-info-dark);
     border-bottom-width: 2px;
     transition: all 0.3s ease;
   }
+
+  .unit-details .input-box ul li {
+    list-style-type: square;
+    color: red;
+  }
+
+  
   .unit-details .input-box select{
     height: 35px;
     width: 100%;
@@ -493,8 +500,7 @@ main .insights .progress .number{
     border-bottom-width: 2px;
     transition: all 0.3s ease;
   }
-  .unit-details .input-box input:focus,
-  .unit-details .input-box input:valid{
+  .unit-details .input-box input:focus{
     border-color: var(--color-wellcoms);
   }
   

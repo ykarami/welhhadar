@@ -29,8 +29,8 @@ class unitRequest extends FormRequest
             'well' => 'required',
             'haspId' => 'required | numeric',
             'destination' => 'required',
-            'stats' => 'required',
-            'type' => 'required',
+            'status' => 'required',
+            'jobProfile' => 'required',
 
         ];
     }
